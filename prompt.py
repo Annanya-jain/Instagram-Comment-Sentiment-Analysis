@@ -6,7 +6,7 @@ def give_prediction_on_the_next_post():
     sample_file_3 = PIL.Image.open(f'static\\top_2.jpg')
     sample_file_1 = PIL.Image.open(f'static\\top_3.jpg')
 
-    genai.configure(api_key="AIzaSyAIIWhIx9vdYg1ZmSz3yNnXsXInZMFEUKI")
+    genai.configure(api_key="your google API key")
 
     #myfile = genai.upload_file(path="temp_image.jpeg")
     #print(f"{myfile=}")
