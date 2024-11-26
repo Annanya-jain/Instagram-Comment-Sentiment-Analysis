@@ -1,7 +1,4 @@
 # Instagram-Comment-Sentiment-Analysis
----
-
-# Instagram Sentiment Analysis Flask App
 
 This repository contains a Flask web application that analyzes sentiment in Instagram post comments. It identifies the top and worst-performing posts, predicts trends for future posts, and visualizes sentiment scores alongside post thumbnails. 
 
