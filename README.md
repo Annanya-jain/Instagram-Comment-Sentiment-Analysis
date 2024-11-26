@@ -1,6 +1,4 @@
 # Instagram-Comment-Sentiment-Analysis
-Here is a detailed **README.md** file for your repository:
-
 ---
 
 # Instagram Sentiment Analysis Flask App
