@@ -19,66 +19,63 @@
         <p> This is what you should post next: </p>
         <div markdown="1">{{ prediction_post_text }}</div>
         Add more analysis details here -->
-        <!-- <a href="/">Back to Login</a>
+<!-- <a href="/">Back to Login</a>
     </div>
 </body>
 </html> -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram Account Analysis</title>
-    <link rel="stylesheet" href="/static/stylesanal.css">
+    <link rel="stylesheet" href="/static/stylesanal.css" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> -->
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>Analysis of your account</h1>
-        </header>
-        <main>
-            <section class="top-posts">
-                <h2>Top 3 Posts</h2>
-                <div class="post-grid">
-                    <div class="post-card">
-                        <img src="/static/top_1.jpg" alt="Top post 1">
-                        <div class="overlay">
-                            <span class="rank">1</span>
-                        </div>
-                    </div>
-                    <div class="post-card">
-                        <img src="/static/top_2.jpg" alt="Top post 2">
-                        <div class="overlay">
-                            <span class="rank">2</span>
-                        </div>
-                    </div>
-                    <div class="post-card">
-                        <img src="/static/top_3.jpg" alt="Top post 3">
-                        <div class="overlay">
-                            <span class="rank">3</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="analysis-graph">
-                <h2>Performance Analysis</h2>
-                <div class="graph-container">
-                    <img src="/static/graph_with_thumbnails.png" alt="Analysis graph">
-                </div>
-            </section>
-            <section class="prediction">
-                <h2>Next Post Recommendation</h2>
-                <div class="prediction-content">
-                    {{ prediction_post_text }}
-                </div>
-            </section>
-        </main>
-        <footer>
-            <a href="/" class="btn-back">Back to Login</a>
-        </footer>
+      <header>
+        <h1>Analysis of your account</h1>
+      </header>
+      <main>
+        <section class="top-posts">
+          <h2>Top 3 Posts</h2>
+          <div class="post-grid">
+            <div class="post-card">
+              <img src="/static/top_1.jpg" alt="Top post 1" />
+              <div class="overlay">
+                <span class="rank">1</span>
+              </div>
+            </div>
+            <div class="post-card">
+              <img src="/static/top_2.jpg" alt="Top post 2" />
+              <div class="overlay">
+                <span class="rank">2</span>
+              </div>
+            </div>
+            <div class="post-card">
+              <img src="/static/top_3.jpg" alt="Top post 3" />
+              <div class="overlay">
+                <span class="rank">3</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="analysis-graph">
+          <h2>Performance Analysis</h2>
+          <div class="graph-container">
+            <img src="/static/graph_with_thumbnails.png" alt="Analysis graph" />
+          </div>
+        </section>
+        <section class="prediction">
+          <h2>Next Post Recommendation</h2>
+          <div class="prediction-content">{{ prediction_post_text }}</div>
+        </section>
+      </main>
+      <footer>
+        <a href="/" class="btn-back">Back to Login</a>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
-

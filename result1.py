@@ -6,6 +6,7 @@ import requests
 from io import BytesIO
 import numpy 
 from prompt import give_prediction_on_the_next_post
+import os
 
 # Login to Instagram
 def insta_login(username, password):
@@ -93,7 +94,7 @@ def plot_graph_with_thumbnails(aggregated_data, cl):
     plt.xticks(rotation=90)
     plt.tight_layout()
     print("Saving graph with thumbnails...")
-    plt.savefig("static\\graph_with_thumbnails.png")
+    plt.savefig(os.path.join("static", "graph_with_thumbnails.png"))
     plt.close(fig)
 
 def save_images_to_local_via_media_id(cl, media_ids):
@@ -104,7 +105,7 @@ def save_images_to_local_via_media_id(cl, media_ids):
             try:
                 response = requests.get(thumbnail_url, stream=True)
                 img = plt.imread(BytesIO(response.content), format='jpeg')
-                plt.imsave(f"static\\top_{i}.jpg", img)
+                plt.imsave(os.path.join("static", f"top_{i}.jpg"), img)
                 i=i-1
             except Exception as e:
                 print(f"Error saving thumbnail for media_id {media_id}: {e}")
