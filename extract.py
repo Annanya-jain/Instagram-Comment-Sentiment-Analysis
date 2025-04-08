@@ -11,7 +11,7 @@ def insta_login(username, password):
 
 def getUserId(cl,username):
     print("Getting user id...")
-    user_id = cl.user_id_from_username("username")
+    user_id = cl.user_id_from_username(username)
     return user_id
 
 def returnUserMedia(user_id,n,cl):
