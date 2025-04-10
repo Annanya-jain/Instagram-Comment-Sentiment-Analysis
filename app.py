@@ -69,4 +69,4 @@ def analyze():
     return render_template('analysis.html', username=username, prediction_post_text = prediction_for_next_post)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
